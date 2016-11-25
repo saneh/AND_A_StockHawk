@@ -14,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left|center_vertical"
+        android:contentDescription="@string/symbol_content_description"
         tools:text="GOOG" />
 
     <LinearLayout
@@ -28,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10sp"
+            android:contentDescription="@string/price_content_description"
             tools:text="1000.00" />
 
         <TextView
@@ -38,6 +40,7 @@
             android:background="@drawable/percent_change_pill_green"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
+            android:contentDescription="@string/change_content_description"
             tools:text="100%" />
     </LinearLayout>
 </LinearLayout>
