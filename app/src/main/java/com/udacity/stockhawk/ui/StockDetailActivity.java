@@ -29,9 +29,7 @@ import timber.log.Timber;
 public class StockDetailActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     public static final int STOCK_HISTORY_LOADER = 1;
-    //protected static final String SYMBOL = "symbol";
     public static final String STOCK_URI = "stock_uri";
-    //private String symbol;
     private Uri uri;
     LineChart chart;
 
@@ -40,7 +38,6 @@ public class StockDetailActivity extends AppCompatActivity implements LoaderMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_detail);
         Intent intent = getIntent();
-        //symbol = intent.getStringExtra(SYMBOL);
         if (intent.getData() != null) {
             uri = intent.getData();
         } else if (intent.hasExtra(STOCK_URI)) {
@@ -78,7 +75,6 @@ public class StockDetailActivity extends AppCompatActivity implements LoaderMana
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        //Uri uri = Contract.Quote.makeUriForStock(symbol);
         return new CursorLoader(this, uri, Contract.Quote.QUOTE_COLUMNS, null, null, null);
     }
 

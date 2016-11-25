@@ -51,5 +51,6 @@
     <!--Detail Widget-->
     <string name="empty_quote_list">NO STOCK QUOTES</string>
     <string name="title_widget_detail">STOCK QUOTES</string>
+    <string name="widget_title">STOCK HAWK</string>
 
 </resources>

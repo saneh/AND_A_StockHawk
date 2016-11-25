@@ -70,10 +70,6 @@ public class StockProvider extends ContentProvider {
 
         returnCursor.setNotificationUri(getContext().getContentResolver(), uri);
 
-//        if (db.isOpen()) {
-//            db.close();
-//        }
-
         return returnCursor;
     }
 

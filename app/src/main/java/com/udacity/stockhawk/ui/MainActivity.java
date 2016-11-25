@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         }).attachToRecyclerView(recyclerView);
 
 
+
+
     }
 
     private boolean networkUp() {

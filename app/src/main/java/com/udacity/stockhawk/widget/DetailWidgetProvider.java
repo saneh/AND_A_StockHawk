@@ -16,7 +16,7 @@ import com.udacity.stockhawk.ui.MainActivity;
 import com.udacity.stockhawk.ui.StockDetailActivity;
 
 /**
- * Created by sanehyadav1 on 11/25/16.
+ * AppWidgetProvider
  */
 public class DetailWidgetProvider extends AppWidgetProvider {
     @Override

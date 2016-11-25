@@ -10,12 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:background="@color/primary">
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_stock_icon"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/widget_title"
+            android:padding="@dimen/default_padding"
+            android:fontFamily="sans-serif-condensed"
             />
     </FrameLayout>
     <FrameLayout
